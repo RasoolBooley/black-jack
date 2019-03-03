@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAGA,iCAAiC;ACHjC,wCAAwC",
+"sources": ["../scss/partials/_mixins.scss","../scss/partials/_responsive.scss"],
+"names": [],
+"file": "main.css"
+}
