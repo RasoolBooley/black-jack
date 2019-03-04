@@ -8,26 +8,45 @@ let suits = ["Hearts", "Clubs", "Spades", "Diamonds"];
         "Nine", "Jack", "Queen", "King"
     ];
 
-let deck = [];
 
-for (let suitsIdx = 0; suitsIdx < suits.length; suitsIdx++ ) {
+function createDeck() {
+
+    let deck = [];
+
+    for (let suitsIdx = 0; suitsIdx < suits.length; suitsIdx++ ) {
     
-    for (let valuesIdx = 0; valuesIdx < values.length; valuesIdx++ ){
-        deck.push(values[valuesIdx] + " of " + suits[suitsIdx]);
+        for (let valuesIdx = 0; valuesIdx < values.length; valuesIdx++ ){
+            let card = {
+                suit: suits[suitsIdx],
+                value: values[valuesIdx]
+            };
+            deck.push( card );
+        }
     }
+
+    return deck
 }
 
-    playerCards = [
-        deck[0],
-        deck[1],
-        deck[2]
-        
-    ];
+function getCardString(card) {
+    return card.value + " of " + card.suit;
+}
+
+function getNextCard() {
+    return deck.shift();
+}
+
+let deck = createDeck();
+
+
+    playerCards = [ getNextCard(), getNextCard()];
 
 console.log("welcome to the Black Jack!")
 
 console.log("You are Dealt")
-console.log("    " + playerCards[0])
-console.log("    " + playerCards[2])
+console.log("    " + getCardString(playerCards[0]) )
+console.log("    " + getCardString(playerCards[1]) )
+
+
+
 
 
