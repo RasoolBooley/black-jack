@@ -5,6 +5,13 @@ a black jack game created with JS
 ```
 ```
 
+## Livelink
+
+https://rasoolbooley.github.io/black-jack/
+
+```
+```
+
 ## Technologies Used
 
 - VScode
@@ -30,6 +37,7 @@ a black jack game created with JS
 2019/03/04
 
 - Created Objects for cards
+- Made deck shuffle
 
 ### Contributors 
 
